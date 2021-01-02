@@ -34,7 +34,8 @@ def retrieve_last_element_from_array(array)
   return array [(array.size - 1)]
 end
 
-def update_element_from_index(array, index_number, element)
-array.insert (index_number, element)
-return array[index_number]
+def  update_element_from_index (array, index_number,element)
+    array.delete_at(index_number)
+    array.insert(index_number,element)
+    return array[index_number]
 end
